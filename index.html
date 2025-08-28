@@ -112,7 +112,7 @@
       return fbclid ? ('fb.1.' + Date.now() + '.' + fbclid) : null;
     }
     function sendCapi(path, body) {
-      return fetch('https://metaadss.fly.dev' + path, {
+      return fetch('https://metaads.fly.dev' + path, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
